@@ -1,0 +1,49 @@
+# === Python general ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.log
+*.DS_Store
+
+# === Virtual environments ===
+venv/
+.venv/
+env/
+ENV/
+
+# === TensorFlow / Keras ===
+checkpoints/
+logs/
+saved_models/
+*.pb
+*.tflite
+
+# === Dataset ===
+data/
+dataset/
+pokemon/
+*.csv
+*.zip
+*.tar
+*.gz
+
+# === Notebook / Colab ===
+.ipynb_checkpoints/
+*.ipynb
+
+# === IDEs ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === System files ===
+.DS_Store
+Thumbs.db
+
+# === Temporary / cache ===
+.cache/
+tmp/
+temp/
