@@ -1,5 +1,5 @@
 # train.py
-
+import json
 import argparse
 from pathlib import Path
 from tensorflow import keras
@@ -137,12 +137,18 @@ def main():
     ]
 
     print("Training...")
-    model.fit(
+    history = model.fit(
         train_ds,
         validation_data=val_ds,
         epochs=args.epochs,
         callbacks=callbacks,
     )
+
+    # === Save history ===
+    history_path = out_dir / f"{args.model}_history.json"
+    with open(history_path, "w") as f:
+        json.dump(history.history, f, indent=2)
+    print(f"Saved training history to {history_path}")
 
     export_path = out_dir / args.model
     model.save(str(export_path) + ".h5")
