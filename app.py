@@ -11,7 +11,7 @@ TYPES = [
 ]
 
 # Ruta del modelo entrenado
-MODEL_PATH = "export/pokemon_custom_cnn.h5"
+MODEL_PATH = "export/pokemon_custom_cnn_v2.h5"
 
 # Tamaño de imagen usado en el entrenamiento
 IMG_SIZE = 256
