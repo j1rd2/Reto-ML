@@ -3,6 +3,16 @@
 This repository contains the complete implementation, training pipeline, and report for a multi-label image classification model that predicts **Pokémon elemental types** using deep learning.  
 The project explores **custom CNNs** and **transfer learning** approaches (EfficientNetB0) with **fine-tuning** and **K-Fold validation**.
 
+## Report
+
+The full academic report (in LaTeX + PDF) is located in the `root`.  
+It includes:
+- Dataset description and class distribution.
+- Model architectures and training strategies.
+- Fine-tuning phases and results.
+- Qualitative prediction analysis.
+- General conclusions and future work.
+
 ---
 
 ## 📁 Repository Structure
@@ -142,18 +152,6 @@ Stores exported `.h5` models for later inference or testing.
 ### `checkpoints/` and `logs/`
 Ignored from Git to reduce repository weight.  
 These directories store intermediate training weights and TensorBoard logs locally.
-
----
-
-## Report
-
-The full academic report (in LaTeX + PDF) is located in the `/report` folder.  
-It includes:
-- Dataset description and class distribution.
-- Model architectures and training strategies.
-- Fine-tuning phases and results.
-- Qualitative prediction analysis.
-- General conclusions and future work.
 
 ---
 
