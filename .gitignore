@@ -29,6 +29,8 @@ pokemon/
 *.tar
 *.gz
 
+plots/
+
 # === Notebook / Colab ===
 .ipynb_checkpoints/
 *.ipynb
@@ -47,3 +49,12 @@ Thumbs.db
 .cache/
 tmp/
 temp/
+
+helper.txt
+# === Export folder rules ===
+# Include the folder itself
+!export/
+# Ignore CSV files inside export/
+export/*.csv
+# If you want to ignore subfolders' CSVs too
+export/**/*.csv
