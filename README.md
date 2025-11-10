@@ -173,22 +173,40 @@ Despite data limitations, results show that **simple CNNs**, when well-tuned, ca
 
 ## Quick Start
 
-1. **Train a model**
+1. **Create and activate virtual environment**
+
+   ```bash
+   # Create the virtual environment
+   python3 -m venv .venv
+
+   # Activate it (macOS / Linux)
+   source .venv/bin/activate
+
+   # Activate it (Windows)
+   .venv\Scripts\activate
+    ```
+
+2. **Install required dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Train a model**
    ```bash
    python3 train.py
    ```
 
-2. **Evaluate the trained model**
+4. **Evaluate the trained model**
    ```bash
    python3 test.py
    ```
 
-3. **Run interactive prediction UI**
+5. **Run interactive prediction UI**
    ```bash
    python3 app.py
    ```
 
-4. **Run fine-tuning (Phase 1 / Phase 2 / K-Fold)**
+6. **Run fine-tuning (Phase 1 / Phase 2 / K-Fold)**
    ```bash
    python3 models/finetune_efficientnet_b0.py
    python3 models/finetune2_efficientnet_b0.py
